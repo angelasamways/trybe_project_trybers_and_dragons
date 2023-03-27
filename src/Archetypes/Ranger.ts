@@ -2,7 +2,7 @@ import Archetype from './Archetype';
 import { EnergyType } from '../Energy';
 
 export default class Ranger extends Archetype {
-  private strength: EnergyType = 'stamina';
+  private force: EnergyType = 'stamina';
   private static instances = 0;
   constructor(name: string) {
     super(name);
@@ -10,7 +10,7 @@ export default class Ranger extends Archetype {
   }
 
   get energyType(): EnergyType {
-    return this.strength;
+    return this.force;
   }
 
   static createdArchetypeInstances(): number {
